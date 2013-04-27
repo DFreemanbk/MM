@@ -28,12 +28,17 @@ public class GraphicsMain extends JFrame {
 			gr2d.drawPolygon(Global.plist.get(i));
 			gr2d.fillPolygon(Global.plist.get(i));
 		}
-
+		gr2d.setPaint(Color.RED);
+		for (int i = 0; i < Global.llist.size(); i++) {
+			gr2d.draw(Global.llist.get(i));
+		}
 	}
 
 	public static void main(String args[]) {
 		xmlparse xml = new xmlparse();
 		xml.startXMLParse();
+		LinesOperation.startFromPPoints();
+		LinesOperation.deleteBadLines();
 		GraphicsMain app = new GraphicsMain();
 	}
 }

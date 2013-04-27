@@ -41,7 +41,6 @@ public class xmlparse {
 			polygonElement = (Element) polygonsNodeList.item(i);
 			pointsNodeList = polygonElement.getElementsByTagName("point");
 			Polygon tempPolygon = new Polygon();
-			
 			//System.out.println("Координаты полигона №" + i);
 			for(int j = 0; j < pointsNodeList.getLength(); j++)
 			{

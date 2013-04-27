@@ -36,7 +36,7 @@
         </point>
         <point>
             <x>600</x>
-            <y>500</y>
+            <y>600</y>
         </point>
     </polygon>
 </polygons>
